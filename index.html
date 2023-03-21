@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title></title>
+<link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+<title>Locale</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,15 +11,32 @@
 
 <style>
 
-	.box {
+	#loginbox {
 		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	img {
+		width: 100px;
+		margin: auto;
+		position: absolute;
+		top: 0%;
+		left: 55%;
+		transform: translate(-50%, -100%);
+	}
+
+	.box {
+		border: 3px solid #0A5995;
 		text-align: center;
-  		width: 10%;
-  		border: 3px solid rgb(50, 80, 200);
-  		padding: 10px;
+		width: 100%;
+		padding: 10px;
 	}
 
 	#password {
+		border: 1px solid #0A5995;
 		outline: none;
 	}
 
@@ -29,6 +47,7 @@
 	<div id="loginbox" class="lightbox" >
 		<div class="horizontal">
 			<div class="vertical">
+				<img src="./icon.png" alt="">
 				<div class="box">
 					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
