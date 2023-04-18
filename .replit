@@ -1,179 +1,179 @@
-hidden=[".config"]
 
-# hosting is currently hardcoded for this language
-# [hosting]
-# route = "/"
-# directory= "/"
 
-[nix]
-channel = "stable-22_11"
 
-[languages.html]
-pattern = "**/*.html"
-  [languages.html.languageServer]
-start = "vscode-html-language-server --stdio"
-  [languages.html.languageServer.initializationOptions]
-  provideFormatter = true
-  [languages.html.languageServer.configuration.html]
-  customData = [ ]
-  autoCreateQuotes = true
-  autoClosingTags = true
-  mirrorCursorOnMatchingTag = false
-  
-    [languages.html.languageServer.configuration.html.completion]
-    attributeDefaultValue = "doublequotes"
-  
-    [languages.html.languageServer.configuration.html.format]
-    enable = true
-    wrapLineLength = 120
-    unformatted = "wbr"
-    contentUnformatted = "pre,code,textarea"
-    indentInnerHtml = false
-    preserveNewLines = true
-    indentHandlebars = false
-    endWithNewline = false
-    extraLiners = "head, body, /html"
-    wrapAttributes = "auto"
-    templating = false
-    unformattedContentDelimiter = ""
-  
-    [languages.html.languageServer.configuration.html.suggest]
-    html5 = true
-  
-    [languages.html.languageServer.configuration.html.validate]
-    scripts = true
-    styles = true
-  
-    [languages.html.languageServer.configuration.html.hover]
-    documentation = true
-    references = true
-  
-    [languages.html.languageServer.configuration.html.trace]
-    server = "off"
 
-[languages.javascript]
-pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
-  [languages.javascript.languageServer]
-start = "typescript-language-server --stdio"
 
-[languages.css]
-pattern = "**/{*.less,*.scss,*.css}"
-  [languages.css.languageServer]
-start = "vscode-css-language-server --stdio"
-    [languages.css.languageServer.configuration.css]
-      customData = [ ]
-      validate = true
 
-      [languages.css.languageServer.configuration.css.completion]
-      triggerPropertyValueCompletion = true
-      completePropertyWithSemicolon = true
+
+  
+  
+  
+  
+  
+  
     
-      [languages.css.languageServer.configuration.css.hover]
-      documentation = true
-      references = true
     
-      [languages.css.languageServer.configuration.css.lint]
+    
+    
+    
+    
+    
+    
+    
+    
+    
       # Configure linting
+      # Configure linting
+      # Configure linting
+      # error = show red underline
+      # error = show red underline
+      # error = show red underline
+      # ignore = don't show any warning or error
+      # ignore = don't show any warning or error
       # ignore = don't show any warning or error
       # warning = show yellow underline
-      # error = show red underline
+      # warning = show yellow underline
+      # warning = show yellow underline
+      [languages.css.languageServer.configuration.css.completion]
+      [languages.css.languageServer.configuration.css.hover]
+      [languages.css.languageServer.configuration.css.lint]
+      [languages.css.languageServer.configuration.css.trace]
+      [languages.css.languageServer.configuration.less.completion]
+      [languages.css.languageServer.configuration.less.hover]
+      [languages.css.languageServer.configuration.less.lint]
+      [languages.css.languageServer.configuration.scss.completion]
+      [languages.css.languageServer.configuration.scss.hover]
+      [languages.css.languageServer.configuration.scss.lint]
+      argumentsInColorFunction = "error" # Invalid number of parameters
+      argumentsInColorFunction = "error" # Invalid number of parameters
       argumentsInColorFunction = "error" # Invalid number of parameters
       boxModel = "ignore" # Do not use width or height when using padding or border
+      boxModel = "ignore" # Do not use width or height when using padding or border
+      boxModel = "ignore" # Do not use width or height when using padding or border
       compatibleVendorPrefixes = "ignore"  # When using a vendor-specific prefix make sure to also include all other vendor-specific properties"
+      compatibleVendorPrefixes = "ignore"  # When using a vendor-specific prefix make sure to also include all other vendor-specific properties"
+      compatibleVendorPrefixes = "ignore"  # When using a vendor-specific prefix make sure to also include all other vendor-specific properties"
+      completePropertyWithSemicolon = true
+      completePropertyWithSemicolon = true
+      completePropertyWithSemicolon = true
+      customData = [ ]
+      documentation = true
+      documentation = true
+      documentation = true
+      duplicateProperties = "warning" # Do not use duplicate style definitions
+      duplicateProperties = "warning" # Do not use duplicate style definitions
       duplicateProperties = "warning" # Do not use duplicate style definitions
       emptyRules = "warning" # Do not use empty rulesets
+      emptyRules = "warning" # Do not use empty rulesets
+      emptyRules = "warning" # Do not use empty rulesets
+      float = "ignore" # Avoid using 'float'. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.
+      float = "ignore" # Avoid using 'float'. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.
       float = "ignore" # Avoid using 'float'. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.
       fontFaceProperties = "warning" # @font-face rule must define 'src' and 'font-family' properties 
+      fontFaceProperties = "warning" # @font-face rule must define 'src' and 'font-family' properties 
+      fontFaceProperties = "warning" # @font-face rule must define 'src' and 'font-family' properties 
+      hexColorLength = "error" # Hex colors must consist of three, four, six or eight hex numbers
+      hexColorLength = "error" # Hex colors must consist of three, four, six or eight hex numbers
       hexColorLength = "error" # Hex colors must consist of three, four, six or eight hex numbers
       idSelector = "ignore" # Selectors should not contain IDs because these rules are too tightly coupled with the HTML.
+      idSelector = "ignore" # Selectors should not contain IDs because these rules are too tightly coupled with the HTML.
+      idSelector = "ignore" # Selectors should not contain IDs because these rules are too tightly coupled with the HTML.
+      ieHack = "ignore" # IE hacks are only necessary when supporting IE7 and older
+      ieHack = "ignore" # IE hacks are only necessary when supporting IE7 and older
       ieHack = "ignore" # IE hacks are only necessary when supporting IE7 and older
       important = "ignore" # Avoid using !important. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.
+      important = "ignore" # Avoid using !important. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.
+      important = "ignore" # Avoid using !important. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.
+      importStatement = "ignore" # Import statements do not load in parallel
+      importStatement = "ignore" # Import statements do not load in parallel
       importStatement = "ignore" # Import statements do not load in parallel
       propertyIgnoredDueToDisplay = "warning" # Property is ignored due to the display
+      propertyIgnoredDueToDisplay = "warning" # Property is ignored due to the display
+      propertyIgnoredDueToDisplay = "warning" # Property is ignored due to the display
+      references = true
+      references = true
+      references = true
+      server = "off"
+      triggerPropertyValueCompletion = true
+      triggerPropertyValueCompletion = true
+      triggerPropertyValueCompletion = true
+      universalSelector = "ignore" # The universal selector (*) is known to be slow
+      universalSelector = "ignore" # The universal selector (*) is known to be slow
       universalSelector = "ignore" # The universal selector (*) is known to be slow
       unknownAtRules = "warning" # Unknown at-rule
+      unknownAtRules = "warning" # Unknown at-rule
+      unknownAtRules = "warning" # Unknown at-rule
       unknownProperties = "warning" # Unknown property.
-      validProperties = [ ] # add some properties that the linter doesn't know about
+      unknownProperties = "warning" # Unknown property.
+      unknownProperties = "warning" # Unknown property.
       unknownVendorSpecificProperties = "ignore" # Unknown vendor specific property.
+      unknownVendorSpecificProperties = "ignore" # Unknown vendor specific property.
+      unknownVendorSpecificProperties = "ignore" # Unknown vendor specific property.
+      validate = true
+      validProperties = [ ] # add some properties that the linter doesn't know about
+      validProperties = [ ] # add some properties that the linter doesn't know about
+      validProperties = [ ] # add some properties that the linter doesn't know about
+      vendorPrefix = "warning" # When using a vendor-specific prefix also include the standard property
+      vendorPrefix = "warning" # When using a vendor-specific prefix also include the standard property
       vendorPrefix = "warning" # When using a vendor-specific prefix also include the standard property
       zeroUnits = "ignore" # No unit for zero needed
-    
-      [languages.css.languageServer.configuration.css.trace]
-      server = "off"
-    
-    [languages.css.languageServer.configuration.scss]
-    validate = true
-    
-      [languages.css.languageServer.configuration.scss.completion]
-      triggerPropertyValueCompletion = true
-      completePropertyWithSemicolon = true
-    
-      [languages.css.languageServer.configuration.scss.hover]
-      documentation = true
-      references = true
-    
-      [languages.css.languageServer.configuration.scss.lint]
-      # Configure linting
-      # ignore = don't show any warning or error
-      # warning = show yellow underline
-      # error = show red underline
-      argumentsInColorFunction = "error" # Invalid number of parameters
-      boxModel = "ignore" # Do not use width or height when using padding or border
-      compatibleVendorPrefixes = "ignore"  # When using a vendor-specific prefix make sure to also include all other vendor-specific properties"
-      duplicateProperties = "warning" # Do not use duplicate style definitions
-      emptyRules = "warning" # Do not use empty rulesets
-      float = "ignore" # Avoid using 'float'. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.
-      fontFaceProperties = "warning" # @font-face rule must define 'src' and 'font-family' properties 
-      hexColorLength = "error" # Hex colors must consist of three, four, six or eight hex numbers
-      idSelector = "ignore" # Selectors should not contain IDs because these rules are too tightly coupled with the HTML.
-      ieHack = "ignore" # IE hacks are only necessary when supporting IE7 and older
-      important = "ignore" # Avoid using !important. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.
-      importStatement = "ignore" # Import statements do not load in parallel
-      propertyIgnoredDueToDisplay = "warning" # Property is ignored due to the display
-      universalSelector = "ignore" # The universal selector (*) is known to be slow
-      unknownAtRules = "warning" # Unknown at-rule
-      unknownProperties = "warning" # Unknown property.
-      validProperties = [ ] # add some properties that the linter doesn't know about
-      unknownVendorSpecificProperties = "ignore" # Unknown vendor specific property.
-      vendorPrefix = "warning" # When using a vendor-specific prefix also include the standard property
       zeroUnits = "ignore" # No unit for zero needed"
-    
+      zeroUnits = "ignore" # No unit for zero needed"
+    [languages.css.languageServer.configuration.css]
     [languages.css.languageServer.configuration.less]
+    [languages.css.languageServer.configuration.scss]
+    [languages.html.languageServer.configuration.html.completion]
+    [languages.html.languageServer.configuration.html.format]
+    [languages.html.languageServer.configuration.html.hover]
+    [languages.html.languageServer.configuration.html.suggest]
+    [languages.html.languageServer.configuration.html.trace]
+    [languages.html.languageServer.configuration.html.validate]
+    attributeDefaultValue = "doublequotes"
+    contentUnformatted = "pre,code,textarea"
+    documentation = true
+    enable = true
+    endWithNewline = false
+    extraLiners = "head, body, /html"
+    html5 = true
+    indentHandlebars = false
+    indentInnerHtml = false
+    preserveNewLines = true
+    references = true
+    scripts = true
+    server = "off"
+    styles = true
+    templating = false
+    unformatted = "wbr"
+    unformattedContentDelimiter = ""
     validate = true
-    
-      [languages.css.languageServer.configuration.less.completion]
-      triggerPropertyValueCompletion = true
-      completePropertyWithSemicolon = true
-    
-      [languages.css.languageServer.configuration.less.hover]
-      documentation = true
-      references = true
-    
-      [languages.css.languageServer.configuration.less.lint]
-      # Configure linting
-      # ignore = don't show any warning or error
-      # warning = show yellow underline
-      # error = show red underline
-      argumentsInColorFunction = "error" # Invalid number of parameters
-      boxModel = "ignore" # Do not use width or height when using padding or border
-      compatibleVendorPrefixes = "ignore"  # When using a vendor-specific prefix make sure to also include all other vendor-specific properties"
-      duplicateProperties = "warning" # Do not use duplicate style definitions
-      emptyRules = "warning" # Do not use empty rulesets
-      float = "ignore" # Avoid using 'float'. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.
-      fontFaceProperties = "warning" # @font-face rule must define 'src' and 'font-family' properties 
-      hexColorLength = "error" # Hex colors must consist of three, four, six or eight hex numbers
-      idSelector = "ignore" # Selectors should not contain IDs because these rules are too tightly coupled with the HTML.
-      ieHack = "ignore" # IE hacks are only necessary when supporting IE7 and older
-      important = "ignore" # Avoid using !important. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.
-      importStatement = "ignore" # Import statements do not load in parallel
-      propertyIgnoredDueToDisplay = "warning" # Property is ignored due to the display
-      universalSelector = "ignore" # The universal selector (*) is known to be slow
-      unknownAtRules = "warning" # Unknown at-rule
-      unknownProperties = "warning" # Unknown property.
-      validProperties = [ ] # add some properties that the linter doesn't know about
-      unknownVendorSpecificProperties = "ignore" # Unknown vendor specific property.
-      vendorPrefix = "warning" # When using a vendor-specific prefix also include the standard property
-      zeroUnits = "ignore" # No unit for zero needed"
-
+    validate = true
+    wrapAttributes = "auto"
+    wrapLineLength = 120
+  [languages.css.languageServer]
+  [languages.html.languageServer.configuration.html]
+  [languages.html.languageServer.initializationOptions]
+  [languages.html.languageServer]
+  [languages.javascript.languageServer]
+  autoClosingTags = true
+  autoCreateQuotes = true
+  customData = [ ]
+  mirrorCursorOnMatchingTag = false
+  provideFormatter = true
+# [hosting]
+# directory= "/"
+# hosting is currently hardcoded for this language
+# route = "/"
 [gitHubImport]
+[languages.css]
+[languages.html]
+[languages.javascript]
+[nix]
+channel = "stable-22_11"
+hidden=[".config"]
+pattern = "**/*.html"
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
+pattern = "**/{*.less,*.scss,*.css}"
 requiredFiles = [".replit", "replit.nix", ".config"]
+start = "typescript-language-server --stdio"
+start = "vscode-css-language-server --stdio"
+start = "vscode-html-language-server --stdio"
