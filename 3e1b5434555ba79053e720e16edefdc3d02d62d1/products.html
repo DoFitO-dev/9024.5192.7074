@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Available</title>
+</head>
+
+<style>
+    body {
+        margin: 12px;
+        padding: 0;
+    } 
+    body {
+        background-color: #fff;
+    }
+
+    body div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div>
+        <button><a href="#">Show Files</a></button>
+        <button><a href="./products.html">Products</a></button>
+    </div>
+
+
+    <h1>Products Available</h1>
+
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1NCJdNSHwlWg54Wfja6gMnW4"
+  publishable-key="pk_live_51NC10KSHwlWg54WfY4hhRmsLJxB0xOP4rSwuaOTve7V0LYi0YiR2Cma0CvsZ8b9nugM1kYtCmbi2uK96w9ewQo3y00jYqpDtRq"
+>
+</stripe-buy-button>
+    
+</body>
+</html>
